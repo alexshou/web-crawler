@@ -4,7 +4,7 @@ $.get("/articles", function(data) {
   // For each one
   for (var i = 1; i < 21; i++) {
     // Display the apropos information on the page
-    $("#articles").append("<p data-id='" + data[i]._id + "'>" + i + "." + data[i].title + "<br />" + data[i].link + "</p>");
+    $("#articles").append("<p data-id='" + data[i + 3]._id + "'>" + i + "." + data[i + 3].title + "<br />" + data[i + 3].link + "</p>");
   
   }
 });
